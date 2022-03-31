@@ -1,0 +1,85 @@
+/* 19/03/2022 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+section {
+  background-image: linear-gradient(40deg, red, black, red);
+  height: 100vh;
+  position: relative;
+}
+section .father {
+  width: 40%;
+  padding: 30px 15px;
+  box-shadow: 0 0 7px 2px #ffffff6b;
+  position: absolute;
+  left: 30%;
+  top: 28%;
+  background-image: linear-gradient(30deg, red, black, red);
+  display: flex;
+  flex-direction: column;
+}
+section .father .login a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 10px auto;
+}
+section .father form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+section .father form input {
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+  background-color: #00000059;
+  color: #fff;
+  transition: 0.6s;
+  border-bottom: 1px solid red;
+}
+section .father form input:hover {
+  border-bottom: 1px solid;
+}
+section .father .button {
+  padding: 5px 50px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin: 11px auto;
+  background-color: #0000007d;
+  transition: 0.6s;
+  color: #fff;
+}
+section .father .button:hover {
+  border: 1px solid red;
+  box-shadow: 0 0 7px 2px red;
+  color: #fff;
+  background-color: red;
+}
+section .father div {
+  display: flex;
+  flex-direction: column;
+}
+section .father .text a {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px auto;
+  width: 100%;
+  transition: 0.6s;
+}
+section .father .text a:hover {
+  color: #000;
+}
+@media (max-width: 767px) {
+  section .father {
+    width: 60%;
+    left: 20%;
+  }
+}
